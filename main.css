@@ -24,3 +24,107 @@ h2,
 p {
   margin: 0;
 }
+
+/* ========================================
+   BASIS
+======================================== */
+
+body {
+  background-color: var(--void-black);
+  color: var(--bone);
+  font-family: 'Barlow', Arial, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Barlow Condensed', Arial, sans-serif;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 270px;
+  line-height: 0.9;
+}
+
+h1 em {
+  color: var(--acid-lime);
+  font-style: italic;
+}
+
+/* ========================================
+   LABELS
+======================================== */
+
+.small-label {
+  font-family: 'Menlo', 'Courier New', monospace;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--raw-silver);
+}
+
+/* ========================================
+   PRIJS & KNOP
+======================================== */
+
+.price {
+  font-family: 'Barlow Condensed', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.shop-button {
+  display: inline-block;
+  background-color: var(--acid-lime);
+  color: var(--void-black);
+  font-family: 'Barlow Condensed', Arial, sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 24px;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 64px;
+}
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+  position: relative;
+  padding: 120px 64px;
+  background-image: url('assets/headphones.png');
+  background-size: cover;
+  background-position: right center;
+}
+
+.hero-reference {
+  position: absolute;
+  top: 32px;
+  right: 64px;
+  text-align: right;
+}
+
+.hero-side-label {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: rotate(-90deg) translateX(50%);
+  transform-origin: left;
+}
+
+.hero-purchase {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 64px;
+}
